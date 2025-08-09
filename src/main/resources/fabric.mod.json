@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "carpetskyadditions_automultiplayer",
+  "version": "${version}",
+  "name": "CarpetSkyAdditions_Automultiplayer",
+  "description": "",
+  "authors": ["Kurt"],
+  "contact": {},
+  "license": "GPL-3.0",
+  "environment": "server",
+  "entrypoints": {
+    "fabric-datagen": [
+      "cn.kurt6.carpetskyadditions_automultiplayer.client.Carpetskyadditions_automultiplayerDataGenerator"
+    ],
+    "main": [
+      "cn.kurt6.carpetskyadditions_automultiplayer.Carpetskyadditions_automultiplayer"
+    ]
+  },
+  "mixins": [
+    "carpetskyadditions_automultiplayer.mixins.json",
+    {
+      "config": "carpetskyadditions_automultiplayer.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
