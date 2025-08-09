@@ -1,0 +1,2 @@
+# CarpetSkyAdditions_Automultiplayer
+carpetskyadditions附加mod，新玩家加入输入/new skyisland即可生成并传送到新岛
